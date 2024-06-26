@@ -1,0 +1,104 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+\\* Fontes utilizadas no figma
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.strong-yellow{
+    color: #FA8305;
+    text-shadow: 1px 1px 1px black;
+    font-size:25px !important;
+}
+  .poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.welcome {
+    background-color: #39289F;
+    color: #fff;
+    padding: 1rem 2rem;
+    height: 100vh;
+}
+.more-details{
+    margin-top: 2rem;
+    background-color: #FA8305;
+    color: #fff;
+    border-radius: 2rem;
+    border: 0;
+    height: 3rem;
+    width: 12rem;
+    font-size:medium;
+}
+.introduction{
+    width: 26vw;
+    margin-left: 10rem;
+    margin-top: 20vh;
+    
+    h1{
+        width: 24vw;
+        font-size: 60px;
+        margin: 0;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+div.welcome-art{
+    right: 0;
+    top: 0;
+    position: absolute;
+
+    img{
+     width: 50vw;
+     height: 90vh;   
+    }
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10rem;
+    margin-top: 2rem;
+}
+.logo img {
+    height: 2rem;
+    vertical-align: middle;
+}
+.welcome nav {
+    gap: 3rem;
+    display: flex;
+    text-align: right;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    .contact-us{
+        background-color: #FA8305;
+        border-radius: 1rem;
+    }
+}
+.welcome nav a {
+    font-size: 20px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 22px;
+}
+.welcome nav a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FA8305;
+    border-radius: 5px;
+}
