@@ -155,3 +155,44 @@ header{
     text-align: center;
     
 }
+
+#spiderman{
+    display: flex;
+    height: 40vw !important;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    #aling-content-spiderman{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+
+        #spiderman-imgs-grp{
+            display: flex;
+            justify-content: flex-end;
+
+            #yellow-circle{
+                position: absolute;
+                margin-right: 4rem;
+                z-index: 0;
+            }
+
+            #spiderman-img{
+                position: relative;
+                z-index: 1;
+                margin-top: 3rem;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+#text-spiderman{
+    width: 50%;
+
+    #title-spiderman{
+        font-size: xx-large;
+    }
+}
