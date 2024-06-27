@@ -2,7 +2,10 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #39289F;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 \\* Fontes utilizadas no figma
 .poppins-bold {
@@ -10,18 +13,18 @@ body {
     font-weight: 700;
     font-style: normal;
 }
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
 .strong-yellow{
     color: #FA8305;
     text-shadow: 1px 1px 1px black;
     font-size:25px !important;
 }
-  .poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-.welcome {
-    background-color: #39289F;
+.section-standard {
     color: #fff;
     padding: 1rem 2rem;
     height: 100vh;
@@ -101,4 +104,54 @@ header{
     height: 2px;
     background-color: #FA8305;
     border-radius: 5px;
+}
+.trending-games {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-right: 14rem;
+    justify-content: center;
+}
+.apresentacion-game-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 2rem;
+}
+.row-game{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 6rem;
+}
+.card-game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description-game{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#seeAllBtn{
+    height: 3rem;
+    width: 8rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #ffffff60;
+    font-size: 18px;
+    color: white;
+}
+
+#row-game-subtitle{
+    font-size: larger;
+    margin: 0 25rem;
+    text-align: center;
+    
 }
