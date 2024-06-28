@@ -139,7 +139,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
 }
-#seeAllBtn {
+.see-all-btn {
   height: 3rem;
   width: 8rem;
   border-radius: 6px;
@@ -247,4 +247,48 @@ header {
       }
     }
   }
+}
+
+#recent-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 4rem;
+    justify-content: center;
+
+    #text-projects{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: center;
+
+        h2{
+            font-size: xx-large;
+        }
+    }
+
+    .imgs-projects{
+        height: 200px;
+    }
+
+    #group-rows-images{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        flex-direction: column;
+
+        .row-images{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            gap: 2rem;
+            width: 100%;
+            justify-content: flex-start;
+        }
+    }
+
 }
