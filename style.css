@@ -1,198 +1,250 @@
 body {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #39289F;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #39289f;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-\\* Fontes utilizadas no figma
-.poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+\\* Fontes utilizadas no figma .poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 .poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 
-.strong-yellow{
-    color: #FA8305;
-    text-shadow: 1px 1px 1px black;
-    font-size:25px !important;
+.strong-yellow {
+  color: #fa8305;
+  text-shadow: 1px 1px 1px black;
+  font-size: 25px !important;
 }
 .section-standard {
-    color: #fff;
-    padding: 1rem 2rem;
-    height: 100vh;
+  color: #fff;
+  padding: 1rem 2rem;
+  height: 100vh;
 }
-.more-details{
-    margin-top: 2rem;
-    background-color: #FA8305;
-    color: #fff;
-    border-radius: 2rem;
-    border: 0;
-    height: 3rem;
-    width: 12rem;
-    font-size:medium;
+.more-details {
+  margin-top: 2rem;
+  background-color: #fa8305;
+  color: #fff;
+  border-radius: 2rem;
+  border: 0;
+  height: 3rem;
+  width: 12rem;
+  font-size: medium;
 }
-.introduction{
-    width: 26vw;
-    margin-left: 10rem;
-    margin-top: 20vh;
-    
-    h1{
-        width: 24vw;
-        font-size: 60px;
-        margin: 0;
-    }
-    p{
-        font-size: 18px;
-    }
-}
-div.welcome-art{
-    right: 0;
-    top: 0;
-    position: absolute;
+.introduction {
+  width: 26vw;
+  margin-left: 10rem;
+  margin-top: 20vh;
 
-    img{
-     width: 50vw;
-     height: 90vh;   
-    }
+  h1 {
+    width: 24vw;
+    font-size: 60px;
+    margin: 0;
+  }
+  p {
+    font-size: 18px;
+  }
 }
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 10rem;
-    margin-top: 2rem;
+div.welcome-art {
+  right: 0;
+  top: 0;
+  position: absolute;
+
+  img {
+    width: 50vw;
+    height: 90vh;
+  }
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10rem;
+  margin-top: 2rem;
 }
 .logo img {
-    height: 2rem;
-    vertical-align: middle;
+  height: 2rem;
+  vertical-align: middle;
 }
 .welcome nav {
-    gap: 3rem;
-    display: flex;
-    text-align: right;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
+  gap: 3rem;
+  display: flex;
+  text-align: right;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 
-    .contact-us{
-        background-color: #FA8305;
-        border-radius: 1rem;
-    }
+  .contact-us {
+    background-color: #fa8305;
+    border-radius: 1rem;
+  }
+
 }
 .welcome nav a {
-    font-size: 20px;
-    position: relative;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 22px;
+  font-size: 20px;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 22px;
 }
 .welcome nav a:hover::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #FA8305;
-    border-radius: 5px;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fa8305;
+  border-radius: 5px;
 }
 .trending-games {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+  margin-right: 14rem;
+  justify-content: center;
+}
+.apresentacion-game-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 2rem;
+}
+.row-game {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+.card-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description-game {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#seeAllBtn {
+  height: 3rem;
+  width: 8rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #ffffff60;
+  font-size: 18px;
+  color: white;
+}
+
+#row-game-subtitle {
+  font-size: larger;
+  margin: 0 25rem;
+  text-align: center;
+}
+
+#spiderman {
+  display: flex;
+  height: 80vh !important;
+  flex-direction: column;
+
+  #aling-content-spiderman {
     display: flex;
     flex-direction: column;
-    margin-left: 10rem;
-    margin-right: 14rem;
-    justify-content: center;
-}
-.apresentacion-game-section{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'Rubik', sans-serif;
-    margin-bottom: 2rem;
-}
-.row-game{
-    display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
     align-items: center;
+
+    #spiderman-imgs-grp {
+      display: flex;
+      justify-content: flex-end;
+
+      #yellow-circle {
+        position: absolute;
+        margin-right: 4rem;
+      }
+
+      #spiderman-img {
+        position: relative;
+        margin-top: 3rem;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+#text-spiderman {
+  margin-left: 6rem;
+  width: 50%;
+
+  #title-spiderman {
+    font-size: xx-large;
+  }
+}
+
+#categories-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./assets/backgroundScenarioLandscape.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh !important;
+
+  #categories-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    h2 {
+      font-size: xx-large;
+      width: 46vw;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      width: 45vw;
+    }
+  }
+
+  #icons-group {
+    display: flex;
     gap: 2rem;
-    margin-bottom: 6rem;
-}
-.card-game{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.description-game{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-#seeAllBtn{
-    height: 3rem;
-    width: 8rem;
-    border-radius: 6px;
-    border: none;
-    background-color: #ffffff60;
-    font-size: 18px;
-    color: white;
-}
-
-#row-game-subtitle{
-    font-size: larger;
-    margin: 0 25rem;
-    text-align: center;
-    
-}
-
-#spiderman{
-    display: flex;
-    height: 40vw !important;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
+    width: 60vw;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 
-    #aling-content-spiderman{
+    .icon-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap;
+      width: 12vw;
+
+      .background-icon {
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: flex-start;
-
-        #spiderman-imgs-grp{
-            display: flex;
-            justify-content: flex-end;
-
-            #yellow-circle{
-                position: absolute;
-                margin-right: 4rem;
-                z-index: 0;
-            }
-
-            #spiderman-img{
-                position: relative;
-                z-index: 1;
-                margin-top: 3rem;
-                border-radius: 10px;
-            }
-        }
+        height: 4rem;
+        width: 4rem;
+        background-color: white;
+        border-radius: 3rem;
+        justify-content: center;
+        align-items: center;
+      }
     }
-}
-#text-spiderman{
-    width: 50%;
-
-    #title-spiderman{
-        font-size: xx-large;
-    }
+  }
 }
