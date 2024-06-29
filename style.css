@@ -138,6 +138,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 1rem;
 }
 .see-all-btn {
   height: 3rem;
@@ -302,7 +303,6 @@ header {
 
 #newsletter{
     display: flex;
-    align-items: center;
     justify-content: center;
     height: 60vh;
 
@@ -320,6 +320,7 @@ header {
         width: 92%;
         justify-content: space-between;
         flex-wrap: wrap;
+        row-gap: 2rem;
 
         #newsletter-label{
             display: flex;
@@ -342,5 +343,67 @@ header {
                 background-color: #DC7000;
             }
         }
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #070707;
+    
+    #footer-information{
+        display: flex;
+        flex-direction: row;
+        margin: 3rem 10rem;
+        justify-content: space-between; 
+        flex-wrap: wrap;
+        row-gap: 2rem;
+
+        #information-1{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+        }
+        #information-2{
+            width: 12%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2%;
+            justify-content: space-between;
+        }
+        #information-3{
+            display: flex;
+            width: 28%;
+            flex-direction: column;
+        }
+        #information-icons{
+            display: flex;
+            align-items: flex-end;
+            flex-direction: row;
+            gap: 1rem;
+
+            .icon-background{
+                color: white;
+                background-color: white;
+                padding: 0.8rem;
+                border-radius: 5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .footer-icons{
+                    height: 1rem;
+                }
+            }
+        }
+    }
+
+    #copyright-row{
+        display: flex;
+        height: 10vh;
+        justify-content: center;
+        align-items: center;
+        border-top: 2px solid #D2D2D2;
     }
 }
