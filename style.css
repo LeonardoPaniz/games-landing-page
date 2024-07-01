@@ -5,6 +5,10 @@ body {
   background-color: #39289f;
 }
 
+#second-screen-background{
+    background: linear-gradient(180deg, rgba(34,17,231,1) 0%, rgba(56,56,55,1) 100%);
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 \\* Fontes utilizadas no figma .poppins-bold {
@@ -383,19 +387,22 @@ footer{
             flex-direction: row;
             gap: 1rem;
 
-            .icon-background{
-                color: white;
-                background-color: white;
-                padding: 0.8rem;
-                border-radius: 5rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+            
+        }
+    }
+}
 
-                .footer-icons{
-                    height: 1rem;
-                }
-            }
+    .icon-background{
+        background-color: white;
+        padding: 0.8rem;
+        border-radius: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        .footer-icons{
+            height: 1rem;
         }
     }
 
@@ -405,5 +412,71 @@ footer{
         justify-content: center;
         align-items: center;
         border-top: 2px solid #D2D2D2;
+    }
+
+
+/* Segunda Pagina */
+
+#map-section{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    color: #fff;
+    padding: 1rem 2rem;
+
+    #aling-center-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #group-description-img{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    #description-map{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        #strong-router{
+            color: #fa8305;
+        }
+    }
+    #img-map{
+        display: flex;
+        justify-content: center;
+    }
+    #row-bottom-map{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80vw;
+
+        .divider{
+            width: 2px;
+            height: 6rem;
+            background-color: white;
+        }
+
+        #followus-div{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .followus-div-bottom{
+            display: flex;
+            gap: 1rem;
+
+            .background-black{
+                background-color:#1C140F !important;
+                box-shadow: #070707;
+
+            }
+        }
     }
 }
