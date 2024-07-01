@@ -5,6 +5,14 @@ body {
   background-color: #39289f;
 }
 
+#second-screen-background{
+    background: linear-gradient(180deg, rgba(34,17,231,1) 0%, rgba(56,56,55,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 \\* Fontes utilizadas no figma .poppins-bold {
@@ -383,19 +391,22 @@ footer{
             flex-direction: row;
             gap: 1rem;
 
-            .icon-background{
-                color: white;
-                background-color: white;
-                padding: 0.8rem;
-                border-radius: 5rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+            
+        }
+    }
+}
 
-                .footer-icons{
-                    height: 1rem;
-                }
-            }
+    .icon-background{
+        background-color: white;
+        padding: 0.8rem;
+        border-radius: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        .footer-icons{
+            height: 1rem;
         }
     }
 
@@ -405,5 +416,159 @@ footer{
         justify-content: center;
         align-items: center;
         border-top: 2px solid #D2D2D2;
+    }
+
+
+/* Segunda Pagina */
+
+#map-section{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    color: #fff;
+    padding: 1rem 2rem;
+
+    #aling-center-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #group-description-img{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    #description-map{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        #strong-router{
+            color: #fa8305;
+        }
+    }
+    #img-map{
+        display: flex;
+        justify-content: center;
+    }
+    #row-bottom-map{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80vw;
+
+        .divider{
+            width: 2px;
+            height: 6rem;
+            background-color: white;
+        }
+
+        #followus-div{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .followus-div-bottom{
+            display: flex;
+            gap: 1rem;
+
+            .background-black{
+                background-color:#1C140F !important;
+                box-shadow: #070707;
+
+            }
+        }
+    }
+}
+
+
+#contact-section{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    color: #fff;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-color: #1C140F;
+    background-image: url(./assets/contact\ us/background/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* #contact-background{
+        display: flex;
+    } */
+
+    #container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 40vw;
+
+        #contact-description{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            h1{
+                margin: 0;
+            }
+        }
+
+        form#contact-form{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+
+            div.form-group{
+                display: flex;
+                gap: 1rem;
+                justify-content: space-between;
+
+                div.input-wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    font-size: small;
+                    color: #D2D2D2;
+                    width: 100%;
+                    gap: 4px;
+
+                    .form-control{
+                        padding: 8px;
+                        border-radius: 6px;
+                        border: 2px solid #CECECE;
+                        background-color: #fff5;
+                    }
+
+                    textarea{
+                        height: 10vh;
+                    }
+                }
+            }
+
+            #btn-form-group{
+                display: flex;
+                margin-top: 2rem;
+                flex-direction: row-reverse;
+
+                button{
+                    background-color: #fa8305;
+                    color: white;
+                    border: none;
+                    padding: 12px 32px;
+                    font-size: smaller;
+                    border-radius: 8px;
+                    cursor: pointer;
+                }
+            } 
+        }
     }
 }
