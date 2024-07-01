@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not Found</title>
+    <title>AddUser</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="listUserData.css">
 </head>
-<body id="error-page">
-    <header class="welcome">
-        <a href="home.html">
-            <div class="logo">
-                <img src="./assets/LOGO.svg" alt="Logo">
-            </div>
-        </a>
+<body class="welcome">
+    <header>
+        <div class="logo">
+            <img src="./assets/LOGO.svg" alt="Logo">
+        </div>
         <div>
             <nav>
                 <a href="home.html">Home</a>
@@ -23,17 +22,19 @@
             </nav>
         </div>
     </header>
-    <section class="welcome" id="error-section">
-            <div id="error-content">
-                <div id="error-description">
-                <h1>Ended up getting lost?</h1>
-                    <p>Unfortunately I couldn't understand where you would like to go, but I can take you home safely.</p>
-                    <a href="home.html"><button>Go Home</button></a>
-                </div>
-                <div id="error-img">
-                    <img src="./assets/not found/404.png" alt="Error Page Not Found">
-                </div>    
-            </div>
+    <section>
+        <table id="user-table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </section>
     <footer>
         <div id="footer-information">
@@ -81,5 +82,6 @@
             <p>Copyright ® 2022? prodesigner All rights Rcerved</p>
         </div>
     </footer>
+    <script src="listDataUser.js"></script>
 </body>
 </html>

@@ -45,6 +45,11 @@ body {
   height: 3rem;
   width: 12rem;
   font-size: medium;
+  cursor: pointer;
+
+} .more-details:hover{
+        color: #fa8305;
+        background-color: #fff;
 }
 .introduction {
   width: 26vw;
@@ -115,7 +120,7 @@ header {
 }
 .welcome nav a.contact-us:hover{
     color: #fa8305;
-    background-color: #D2D2D2;
+    background-color: #fff;
 }
 .welcome nav a.contact-us:hover::after {
     content: none;
@@ -163,6 +168,10 @@ header {
   background-color: #ffffff60;
   font-size: 18px;
   color: white;
+  cursor: pointer;
+} .see-all-btn:hover{
+        color: #fa8305;
+        background-color: #fff;
 }
 
 #row-game-subtitle {
@@ -357,6 +366,11 @@ header {
                 color: white;
                 background-color: #DC7000;
             }
+            #newsletter-btn:disabled {
+                background-color: #ccc;
+                color: #666;
+                cursor: not-allowed;
+              }
         }
     }
 }
@@ -386,6 +400,11 @@ footer{
             flex-direction: column;
             margin-bottom: 2%;
             justify-content: space-between;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
         }
         #information-3{
             display: flex;
@@ -425,6 +444,40 @@ footer{
         border-top: 2px solid #D2D2D2;
     }
 
+    .hover-effect:hover {
+        transform: scale(1.1);
+      }
+
+      @media (max-width: 1750px){
+        .introduction{
+            margin-top: 15vh;
+
+            .strong-yellow{
+                font-size: 14px;
+            }
+            h1{
+                font-size: 40px;
+            }
+            p{
+                font-size: none;
+            }
+        }
+
+        #row-game-subtitle{
+            margin: 0rem;
+        }
+
+        #spiderman{
+            margin-bottom: 30vh;
+        }
+
+        #categories-section{
+            gap: 0rem;
+            h2{
+                font-size: larger;
+            }
+        }
+      }
 
 /* Segunda Pagina */
 
@@ -575,54 +628,70 @@ footer{
                     border-radius: 8px;
                     cursor: pointer;
                 }
-            } 
+                button:disabled {
+                    background-color: #ccc;
+                    color: #666;
+                    cursor: not-allowed;
+                  }
+            }
         }
     }
 }
 
-#error-section{
+#error-page{
     display: flex;
     flex-direction: column;
-    padding: 1rem 2rem;
-    justify-content: flex-start;
-    gap: 20vh;
+    justify-content: space-between;
+    height: 142vh;
 
-    #error-content{
+    #error-section{
         display: flex;
-        justify-content: center;
-        gap: 4rem;
-        align-items: center;
-        margin: 0 14vw;
-        color: white;
-
-        #error-description{
+        flex-direction: column;
+        padding: 1rem 2rem;
+        justify-content: flex-start;
+        gap: 20vh;
+    
+        #error-content{
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-
-            h1{
-                font-size: xx-large;
+            justify-content: center;
+            gap: 4rem;
+            align-items: center;
+            margin: 0 14vw;
+            color: white;
+    
+            #error-description{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+    
+                h1{
+                    font-size: xx-large;
+                }
+                p{
+                    margin-bottom: 2rem;
+                    margin-top: 0;
+                    font-size: large;
+                }
+                button{
+                    background-color: #fa8305;
+                    color: white;
+                    border: none;
+                    padding: 12px 32px;
+                    font-size: small;
+                    border-radius: 8px;
+                    cursor: pointer;
+                }button:hover{
+                    color: #fa8305;
+                    background-color: #fff;
+                }
             }
-            p{
-                margin-bottom: 2rem;
-                margin-top: 0;
-                font-size: large;
-            }
-            button{
-                background-color: #fa8305;
-                color: white;
-                border: none;
-                padding: 12px 32px;
-                font-size: small;
-                border-radius: 8px;
-                cursor: pointer;
-            }
-        }
-
-        #error-img{
-            img{
-                height: 40vh;
+    
+            #error-img{
+                img{
+                    height: 40vh;
+                }
             }
         }
     }
 }
+
