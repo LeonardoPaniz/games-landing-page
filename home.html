@@ -15,16 +15,18 @@
             <img src="./assets/Frame 2.svg" alt="Joistick and famous technology companies">
         </div>
         <header>
-            <div class="logo">
-                <img src="./assets/LOGO.svg" alt="Logo">
-            </div>
+            <a href="home.html">
+                <div class="logo">
+                    <img src="./assets/LOGO.svg" alt="Logo">
+                </div>
+            </a>
             <div>
                 <nav>
-                    <a href="#Home">Home</a>
-                    <a href="#AboutUs">About Us</a>
-                    <a href="#Portfolio">Portfolio</a>
-                    <a href="#News">News</a>
-                    <a class="contact-us" href="#ContactUs">Contact Us</a>
+                    <a href="home.html">Home</a>
+                    <a href="error.html">About Us</a>
+                    <a href="error.html">Portfolio</a>
+                    <a href="error.html">News</a>
+                    <a class="contact-us" href="contactUs.html">Contact Us</a>
                 </nav>
             </div>
         </header>
@@ -32,38 +34,42 @@
             <p class=".poppins-bold strong-yellow">Proved By prodesigner</p>
             <h1 class="poppins-bold ">Work that we produce for our clients</h1>
             <p class=".poppins-medium">chief cost although town musical bee doing score consider draw double harbor fighting noun raise too audience bee doing score consider.</p>
-            <button class="more-details"><b>Get more details</b></button>
+            <a href="error.html">
+                <button class="more-details"><b>Get more details</b></button>  
+            </a>       
         </div>
     </section>
     <section class="section-standard trending-games">
             <div class="apresentacion-game-section">
                 <h2>Currently Trending Games</h2>
-                <button class="see-all-btn">SEE ALL</button>
+                <a href="error.html">
+                    <button class="see-all-btn">SEE ALL</button>
+                </a>
             </div>
             <div class="row-game">
                 <div class="card-game">
-                   <img src="./assets/Rectangle 23.svg" alt="Three means pirates">
+                   <img class="hover-effect" src="./assets/Rectangle 23.svg" alt="Three means pirates">
                     <div class="description-game">
                         <img src="./assets/fire.svg" alt="fire icon">
                         <p><strong>40 Followers</strong></p>
                     </div>
                 </div>
                 <div class="card-game">
-                    <img src="./assets/Rectangle 24.svg" alt="Three means pirates">
+                    <img class="hover-effect" src="./assets/Rectangle 24.svg" alt="Three means pirates">
                      <div class="description-game">
                          <img src="./assets/fire.svg" alt="fire icon">
                          <p><strong>40 Followers</strong></p>
                      </div>
                  </div>
                  <div class="card-game">
-                    <img src="./assets/Rectangle 25.svg" alt="Three means pirates">
+                    <img class="hover-effect" src="./assets/Rectangle 25.svg" alt="Three means pirates">
                      <div class="description-game">
                          <img src="./assets/fire.svg" alt="fire icon">
                          <p><strong>40 Followers</strong></p>
                      </div>
                  </div>
                  <div class="card-game">
-                    <img src="./assets/Rectangle 26.svg" alt="Three means pirates">
+                    <img class="hover-effect" src="./assets/Rectangle 26.svg" alt="Three means pirates">
                      <div class="description-game">
                          <img src="./assets/fire.svg" alt="fire icon">
                          <p><strong>40 Followers</strong></p>
@@ -98,7 +104,7 @@
         <div id="icons-group">
             <div class="icon-item">
                 <div class="background-icon">
-                    <img src="./assets/icons/smartphone.svg" class="icons" alt="Mobile Game Development">
+                    <img src="./assets/icons/smartphone.svg" class="icons hover-effect" alt="Mobile Game Development">
                 </div>
                 <p>Mobile game development</p>
                 <img src="./assets/arrow.svg" alt="arrow icon">
@@ -147,17 +153,19 @@
         </div>
         <div id="group-rows-images">
             <div class="row-images">
-                <img class="imgs-projects" src="./assets/imgs-projects/row1-img1.png" alt="Gaming house"></img>
-                <img class="imgs-projects" src="./assets/imgs-projects/row1-img2.png" alt="Guy Playing a video game"></img>
-                <img class="imgs-projects" src="./assets/imgs-projects/row1-img3.png" alt="PC gamer"></img>
+                <img class="imgs-projects hover-effect" src="./assets/imgs-projects/row1-img1.png" alt="Gaming house"></img>
+                <img class="imgs-projects hover-effect" src="./assets/imgs-projects/row1-img2.png" alt="Guy Playing a video game"></img>
+                <img class="imgs-projects hover-effect" src="./assets/imgs-projects/row1-img3.png" alt="PC gamer"></img>
             </div>
             <div class="row-images">
-                <img class="imgs-projects" src="./assets/imgs-projects/row2-img1.png" alt="Playstation logo"></img>
-                <img class="imgs-projects" src="./assets/imgs-projects/row2-img2.png" alt="Fliperama"></img>
-                <img class="imgs-projects" src="./assets/imgs-projects/row2-img3.png" alt="old game machine"></img>
+                <img class="imgs-projects hover-effect" src="./assets/imgs-projects/row2-img1.png" alt="Playstation logo"></img>
+                <img class="imgs-projects hover-effect" src="./assets/imgs-projects/row2-img2.png" alt="Fliperama"></img>
+                <img class="imgs-projects hover-effect" src="./assets/imgs-projects/row2-img3.png" alt="old game machine"></img>
             </div>
         </div>
-        <button class="see-all-btn">SEE ALL</button>
+        <a href="error.html">
+            <button class="see-all-btn">SEE ALL</button>
+        </a>
     </section>
     <section class="section-standard" id="newsletter">
         <div class="aling-content">
@@ -170,10 +178,12 @@
                     <h2>Stay in the loop</h2>
                     <p>Subscribe to receive the latest news and updates about TDA. <br> We promise not to spam you! </p>
                 </div>
-                <div id="newsletter-label">
-                    <input type="email" name="" placeholder="Enter email address" id="user-email">
-                    <button id="newsletter-btn">Continue</button>
-                </div>
+                <form id="newsletter-form">
+                    <div id="newsletter-label">
+                        <input required type="email" name="email-newsletter" placeholder="Enter email address" id="user-email">
+                        <button id="newsletter-btn" disabled>Continue</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
@@ -186,10 +196,10 @@
             </div>
             <div id="information-2">
                 <h3>About us</h3>
-                <a>Zeus</a>
-                <a>Portfolio</a>
-                <a>Carrers</a>
-                <a>Contact us</a>
+                <a href="error.html">Zeus</a>
+                <a href="error.html">Portfolio</a>
+                <a href="error.html">Carrers</a>
+                <a href="contactUs.html">Contact us</a>
             </div>
             <div id="information-3">
                 <h3>Contact us</h3>
@@ -197,18 +207,26 @@
                 <p>+908 89097 890</p>
             </div>
             <div id="information-icons">
-                <div class="icon-background">
-                <img class="footer-icons" src="./assets/footer/facebook 1.svg" alt="">
-                </div>
-                <div class="icon-background">
-                <img class="footer-icons" src="./assets/footer/instagram 1.svg" alt="">
-                </div> 
-                <div class="icon-background">
-                <img class="footer-icons" src="./assets/footer/twitter 1.svg" alt="">
-                </div>
-                <div class="icon-background">
-                <img class="footer-icons" src="./assets/footer/linkedin 1.svg" alt="">    
-                </div>
+                <a target="_blank" href="https://www.facebook.com">
+                    <div class="icon-background">
+                    <img class="footer-icons" src="./assets/footer/facebook 1.svg" alt="Facebook">
+                    </div>
+                </a>
+                <a target="_blank" href="https://www.instagram.com">
+                    <div class="icon-background">
+                    <img class="footer-icons" src="./assets/footer/instagram 1.svg" alt="instagram">
+                    </div> 
+                </a>
+                <a target="_blank" href="https://www.twitter.com">
+                    <div class="icon-background">
+                    <img class="footer-icons" src="./assets/footer/twitter 1.svg" alt="Twitter">
+                    </div>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com">
+                    <div class="icon-background">
+                    <img class="footer-icons" src="./assets/footer/linkedin 1.svg" alt="linkedin">    
+                    </div>
+                </a>
             </div>
         </div>
         <div id="copyright-row">

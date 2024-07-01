@@ -12,16 +12,18 @@
 <body id="second-screen-background">
     <section id="map-section" class="welcome">
         <header>
-            <div class="logo">
-                <img src="./assets/LOGO.svg" alt="Logo">
-            </div>
+            <a href="home.html">
+                <div class="logo">
+                    <img src="./assets/LOGO.svg" alt="Logo">
+                </div>
+            </a>
             <div>
                 <nav>
-                    <a href="#Home">Home</a>
-                    <a href="#AboutUs">About Us</a>
-                    <a href="#Portfolio">Portfolio</a>
-                    <a href="#News">News</a>
-                    <a class="contact-us" href="#ContactUs">Contact Us</a>
+                    <a href="home.html">Home</a>
+                    <a href="error.html">About Us</a>
+                    <a href="error.html">Portfolio</a>
+                    <a href="error.html">News</a>
+                    <a class="contact-us" href="contactUs.html">Contact Us</a>
                 </nav>
             </div>
         </header>
@@ -69,16 +71,12 @@
     </section>
 
       <section id="contact-section" class="welcome">
-        <!-- <div id="contact-background">
-            <img src="./assets/contact us/background/Vector 3.svg" alt="Vector image ilustracion">
-            <img src="./assets/contact us/background/Vector 4.svg" alt="Vector image ilustracion">
-        </div> -->
         <div id="container">
         <div id="contact-description">
             <h1>Say hello</h1>
             <p>Lorem Ipsum is simply dummy text of the printing.</p>
         </div>
-          <form id="contact-form">
+          <form id="contact-form" onsubmit="addUser(event)">
             <div class="form-group">
               <div class="input-wrapper">
                   <label for="first-name" class="form-label">First Name</label>
@@ -102,7 +100,7 @@
               </div>
             </div>
             <div id="btn-form-group">
-                <button type="submit" class="submit-button">Get in touch</button>
+                <button disabled type="submit" id="form-button-submit" class="submit-button">Get in touch</button>
             </div>
           </form>
         </div>
@@ -119,10 +117,12 @@
                     <h2>Stay in the loop</h2>
                     <p>Subscribe to receive the latest news and updates about TDA. <br> We promise not to spam you! </p>
                 </div>
-                <div id="newsletter-label">
-                    <input type="email" name="" placeholder="Enter email address" id="user-email">
-                    <button id="newsletter-btn">Continue</button>
-                </div>
+                <form id="newsletter-form">
+                    <div id="newsletter-label">
+                        <input required type="email" name="email-newsletter" placeholder="Enter email address" id="user-email">
+                        <button id="newsletter-btn" disabled>Continue</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
@@ -135,10 +135,10 @@
             </div>
             <div id="information-2">
                 <h3>About us</h3>
-                <a>Zeus</a>
-                <a>Portfolio</a>
-                <a>Carrers</a>
-                <a>Contact us</a>
+                <a href="error.html">Zeus</a>
+                <a href="error.html">Portfolio</a>
+                <a href="error.html">Carrers</a>
+                <a href="contactUs.html">Contact us</a>
             </div>
             <div id="information-3">
                 <h3>Contact us</h3>
@@ -146,25 +146,32 @@
                 <p>+908 89097 890</p>
             </div>
             <div id="information-icons">
-                <div class="icon-background">
-                <img class="footer-icons" src="./assets/footer/facebook 1.svg" alt="">
-                </div>
-                <div class="icon-background">
-                <img class="footer-icons" src="./assets/footer/instagram 1.svg" alt="">
-                </div> 
-                <div class="icon-background">
-                <img class="footer-icons" src="./assets/footer/twitter 1.svg" alt="">
-                </div>
-                <div class="icon-background">
-                <img class="footer-icons" src="./assets/footer/linkedin 1.svg" alt="">    
-                </div>
+                <a target="_blank" href="https://www.facebook.com">
+                    <div class="icon-background">
+                    <img class="footer-icons" src="./assets/footer/facebook 1.svg" alt="Facebook">
+                    </div>
+                </a>
+                <a target="_blank" href="https://www.instagram.com">
+                    <div class="icon-background">
+                    <img class="footer-icons" src="./assets/footer/instagram 1.svg" alt="instagram">
+                    </div> 
+                </a>
+                <a target="_blank" href="https://www.twitter.com">
+                    <div class="icon-background">
+                    <img class="footer-icons" src="./assets/footer/twitter 1.svg" alt="Twitter">
+                    </div>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com">
+                    <div class="icon-background">
+                    <img class="footer-icons" src="./assets/footer/linkedin 1.svg" alt="linkedin">    
+                    </div>
+                </a>
             </div>
         </div>
         <div id="copyright-row">
             <p>Copyright ® 2022? prodesigner All rights Rcerved</p>
         </div>
     </footer>
-      
-
+      <script src="index.js"></script>
 </body>
 </html>
