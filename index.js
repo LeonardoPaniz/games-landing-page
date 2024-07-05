@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
       event.preventDefault();
       const email = emailInput.value;
       localStorage.setItem('userEmail', email);
-      alert('E-mail salvo com sucesso!');
+      alert('E-mail salvo com sucesso! \n Esse é pra isabella');
     });
   });
 
@@ -51,6 +51,39 @@ document.addEventListener('DOMContentLoaded', function() {
         formIsValid(formsValid);
       });
 
+      document.getElementById('first-name').addEventListener('blur', function(event) {
+        if(formsValid[0] == false){
+          document.getElementById('first-name-error').innerText = "Cannot contain numbers and special characters";
+        }else{
+          document.getElementById('first-name-error').innerText = ""
+        }
+      })
+
+      document.getElementById('last-name').addEventListener('blur', function(event) {
+        if(formsValid[1] == false){
+          document.getElementById('last-name-error').innerText = "Cannot contain numbers and special characters";
+        }else{
+          document.getElementById('last-name-error').innerText = ""
+        }
+      })
+
+      document.getElementById('email').addEventListener('blur', function(event) {
+        if(formsValid[2] == false){
+          document.getElementById('email-error').innerText = "The email must follow this pattern: Name@complement.xxx";
+        }else{
+          document.getElementById('email-error').innerText = ""
+        }
+      })
+
+      document.getElementById('message').addEventListener('blur', function(event) {
+        if(formsValid[3] == false){
+          document.getElementById('message-error').innerText = "The message must be longer than 10 characters";
+        }else{
+          document.getElementById('message-error').innerText = ""
+        }
+      })
+
+
       function formIsValid(formsValid) {
         console.log(formsValid);
         console.log(formsValid.every(valid => valid));
@@ -58,6 +91,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const submitButton = document.getElementById('form-button-submit');
         if (formsValid.every(valid => valid)) {
           submitButton.disabled = false;
+        }else{
+          submitButton.disabled = true;
         }
       }
   });

@@ -365,6 +365,7 @@ header {
                 margin-right: 6px;
                 color: white;
                 background-color: #DC7000;
+                cursor: pointer;
             }
             #newsletter-btn:disabled {
                 background-color: #ccc;
@@ -561,10 +562,6 @@ footer{
     background-size: cover;
     background-position: center;
 
-    /* #contact-background{
-        display: flex;
-    } */
-
     #container{
         display: flex;
         flex-direction: column;
@@ -606,10 +603,15 @@ footer{
                         border-radius: 6px;
                         border: 2px solid #CECECE;
                         background-color: #fff5;
+                        color: #fff;
                     }
 
                     textarea{
                         height: 10vh;
+                    }
+
+                    .error-input{
+                      color: #fa8305;
                     }
                 }
             }

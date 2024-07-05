@@ -42,18 +42,26 @@
                 <div id="followus-div">
                     <p>Follow us</p>
                     <div class="followus-div-bottom">
-                        <div class="icon-background background-black">
-                            <img src="./assets/contact us/facebook 1.svg" alt="">
-                        </div>
-                        <div class="icon-background background-black">
-                            <img src="./assets/contact us/instagram 1.svg" alt="">
-                        </div>
-                        <div class="icon-background background-black">
-                            <img src="./assets/contact us/twitter 1.svg" alt="">
-                        </div>
-                        <div class="icon-background background-black">
-                            <img src="./assets/contact us/linkedin 1.svg" alt="">
-                        </div>
+                        <a target="_blank" href="https://www.facebook.com">
+                                <div class="icon-background background-black">
+                                <img src="./assets/contact us/facebook 1.svg" alt="">
+                                </div>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com">
+                                <div class="icon-background background-black">
+                                <img src="./assets/contact us/instagram 1.svg" alt="">
+                                </div>
+                        </a>
+                        <a target="_blank" href="https://www.x.com">
+                                <div class="icon-background background-black">
+                                <img src="./assets/contact us/twitter 1.svg" alt="">
+                                </div>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com">
+                                <div class="icon-background background-black">
+                                <img src="./assets/contact us/linkedin 1.svg" alt="">
+                                </div>
+                        </a>
                     </div>
                 </div>
                 <div class="divider"></div>
@@ -81,22 +89,26 @@
               <div class="input-wrapper">
                   <label for="first-name" class="form-label">First Name</label>
                 <input type="text" id="first-name" name="first-name" class="form-control" required>
+                <span id="first-name-error" class="error-input"></span>
               </div>
               <div class="input-wrapper">
                   <label for="last-name" class="form-label">Last Name</label>
                 <input type="text" id="last-name" name="last-name" class="form-control" required>
+                <span id="last-name-error" class="error-input"></span>
               </div>
             </div>
             <div class="form-group">
               <div class="input-wrapper">
                   <label for="email" class="form-label">Email Address</label>
                 <input type="email" id="email" name="email" class="form-control" required>
+                <span id="email-error" class="error-input"></span>
               </div>
             </div>
             <div class="form-group">
               <div class="input-wrapper">
                   <label for="message" class="form-label">Message</label>
                 <textarea id="message" name="message" class="form-control" required></textarea>
+                <span id="message-error" class="error-input"></span>
               </div>
             </div>
             <div id="btn-form-group">
